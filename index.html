@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat;
+        }
+
+        body {
+            background-image: url('./assets/abstract-gradient-background-with-grainy-effect\ \(2\)\ \(1\).jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+            width: 100%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 600px;
+            height: 400px;
+
+            background-color: #ebe6e65c;
+            border: 1.5px dashed #1D1D1D;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .info {
+            width: 90%;
+            height: 200px;
+
+            margin-top: -20px;
+            z-index: 1;
+            border-radius: 5px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .tags {
+            margin-top: 10px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .tag {
+            margin: 5px;
+            padding: 5px 20px;
+            
+            font-size: 15px; 
+            font-weight: 400; 
+            color: #fdfdfd;
+
+            background-color: #1d1d1d37;
+            border: 1.5px dashed #1D1D1D;
+            border-radius: 5px;
+            
+        }
+        #profile-picture {
+            width: 150px; 
+            z-index: 2; 
+
+            background-color: #00000042;
+            border: 1.5px dashed #1D1D1D; 
+            border-radius: 50%; 
+        }
+        .t1 {
+            padding: 20px 10px 5px 10px; 
+            font-size: 20px; 
+            font-weight: 500; 
+            color: #fdfdfd; 
+
+            display: flex; 
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .t2 {
+            padding: 5px 10px;
+            font-size: 15px; 
+            font-weight: 400; 
+            color: #fdfdfd; 
+        }
+        .btn1 {
+            margin-top: 10px; 
+            color: #fdfdfd; 
+            padding: 5px 10px;
+
+            font-size: 13px; 
+            font-weight: 400; 
+            text-decoration: none; 
+
+            background-color: #1d1d1dab;
+            border: 1.5px dashed #1D1D1D; 
+            border-radius: 5px; 
+        }
+
+        @media screen and  (max-width: 768px) {
+            body {
+                background-image: url('./assets/abstract-gradient-background-with-grainy-effect\ \(2\)\ \(1\).jpg');
+                height: 95vh;
+            }
+            .container {
+                height: 500px;
+                width: 90%;
+            }
+            .tags {
+                flex-direction: column;
+            }
+            .info {
+                margin-top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="profile-picture" src="./assets/photo.png" >
+        <div class="info">
+            <div class="t1"><p>Ponraj kannan</p><img src="./assets/verify_icon_244678.png" width="25px" style="padding: 0px 5px;"></div>
+            <p class="t2">DSA Mentor | Full Stack Educator</p>
+            <div class="tags">
+                <p class="tag">2+ Experience</p>
+                <p class="tag">1000+ Sessions</p>
+                <p class="tag">30+ Colleges</p>
+            </div>
+            <a href="./Resume.pdf" download="ponraj resume" class="btn1">My Resume</a>
+        </div>
+    </div>
+</body>
+</html>
